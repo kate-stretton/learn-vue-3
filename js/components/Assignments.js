@@ -8,16 +8,16 @@ export default {
         <section class="space-y-6">
             <assignment-list :assignments="filters.inProgress" title="In Progress"></assignment-list>
             <assignment-list :assignments="filters.completed" title="Completed"></assignment-list>
-          <assignment-create @add="add"></assignment-create>  
+          <assignment-create @add="add"></assignment-create>
         </section>
     `,
 
   data() {
     return {
       assignments: [
-        { name: 'Finish project', complete: false, id: 1 },
-        { name: 'Read Chapter 4', complete: false, id: 2 },
-        { name: 'Turn in Homework', complete: false, id: 3 },
+        { name: 'Finish project', complete: false, id: 1, tag: 'math' },
+        { name: 'Read Chapter 4', complete: false, id: 2, tag: 'science' },
+        { name: 'Turn in Homework', complete: false, id: 3, tag: 'math' },
       ],
     }
   },
